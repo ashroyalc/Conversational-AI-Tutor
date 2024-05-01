@@ -13,7 +13,7 @@ This project implements a user-friendly AI chatbot interface using Streamlit and
 **Requirements**
 
 - Python 3.x
-- Streamlit (`pip install streamlit`)
+- Streamlit
 - Google GenerativeAI API access (refer to Google's documentation for setup)
 - `GEMINI_KEY` environment variable (set the API key obtained from Google)
 
@@ -23,10 +23,31 @@ This project implements a user-friendly AI chatbot interface using Streamlit and
 2. Install the required dependencies:
 
    ```bash
-   pip install streamlit
+   pip install streamlit google-generativeai
    ```
-**Navigate to the project directory:**
-  ``` bash
-   cd ai-chatbot
-  ```
+   
+3. Set your Google GenerativeAI API key:
+   - Create a project and enable the Google GenerativeAI API in your Google Cloud Platform console (https://cloud.google.com/ai/generative-ai).
+   - Obtain your API key and set the GEMINI_KEY environment variable:
+      ```
+      export GEMINI_KEY=your_api_key
+      ```
+   - Alternatively, you can add the API key directly to the code in the ######## section (not recommended for security reasons).
 
+**Running the Application**
+   1. Start the Streamlit app:
+      
+      ```bash
+      streamlit run app.py
+      ```
+   2. Access the app in your web browser at http://localhost:8501.
+
+**Usage**
+   - Type your messages in the chat input box and press Enter to interact with the chatbot. The chatbot's responses will be displayed below.
+   - The chat history is preserved for reference.
+
+**Contributing**
+   - We welcome contributions to this project! Feel free to open pull requests with your improvements.
+
+**License**
+   - This project is licensed under the MIT License (https://opensource.org/license/mit).
