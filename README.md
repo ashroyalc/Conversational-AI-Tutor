@@ -30,9 +30,9 @@ This project implements a user-friendly AI chatbot interface using Streamlit and
    
 - Create a project and enable the Google GenerativeAI API in your Google Cloud Platform console (https://cloud.google.com/ai/generative-ai).
 - Obtain your API key and set the GEMINI_KEY environment variable:
-```
-export GEMINI_KEY=your_api_key
-```
+   ```
+   export GEMINI_KEY=your_api_key
+   ```
 - Alternatively, you can add the API key directly to the code in the ######## section (not recommended for security reasons).
 
 **Running the Application**
